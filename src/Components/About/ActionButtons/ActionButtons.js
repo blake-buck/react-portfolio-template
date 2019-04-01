@@ -3,7 +3,6 @@ import ActionButton from './ActionButton/ActionButton';
 
 //@material-ui imports
 import {withStyles} from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 
 const styles =(theme) => ({
     paper:{
@@ -20,13 +19,13 @@ class ActionButtons extends Component{
                 <ActionButton 
                     isLink={true}
                     src='https://maxcdn.icons8.com/Share/icon/Logos/github_filled1600.png' 
-                    link='https://github.com/'
+                    link='https://github.com/blake-buck'
                 />
 
                 <ActionButton
                     isLink={true}
                     src='https://cdn1.iconfinder.com/data/icons/logotypes/32/square-linkedin-512.png'
-                    link='https://www.linkedin.com/'
+                    link='https://www.linkedin.com/in/blake-buck-79bb0b183/'
                 />
 
                 <ActionButton

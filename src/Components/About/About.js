@@ -14,6 +14,7 @@ import Slide from '@material-ui/core/Slide'
 const styles = (theme) => ({
     img:{
         maxWidth:600,
+        maxHeight:450,
         [theme.breakpoints.down('sm')]:{
             display:'none'
         }
@@ -46,7 +47,7 @@ class About extends Component{
     constructor(props){
         super(props);
         this.state={
-            image:'http://pm1.narvii.com/6445/3cfd99e1a47730ca710955bf4b153909be9e45dc_hq.jpg'
+            image:'https://firebasestorage.googleapis.com/v0/b/portfolio-site-69f34.appspot.com/o/IMG_2180.JPG?alt=media&token=e1c42e9c-e0c1-4c9c-be52-fa17ac7ce403'
         }
     }
 

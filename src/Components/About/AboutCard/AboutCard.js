@@ -36,15 +36,10 @@ class AboutCard extends Component{
                     component='img' 
                 />
                 <CardContent>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                     Ut hendrerit diam risus, eu malesuada magna dapibus eget. 
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                     Aenean nec nisi et est sodales tristique ut eget nulla. 
-                     Nunc quis justo vel mauris commodo accumsan. Quisque ante quam, 
-                     imperdiet varius erat nec, sodales tempus leo. Fusce euismod posuere 
-                     sagittis. Aliquam lorem risus, eleifend eget massa vitae, semper 
-                     congue nunc. Nunc imperdiet ullamcorper odio, vitae volutpat mauris
-                      accumsan sed.
+                I am a highly motivated junior web developer that enjoys building web applications that push the limit of 
+                my current understanding of programming. I love the challenge of learning something difficult and using that
+                 skill in a practical way quickly. I am willing to relocate or work remotely. When I'm not coding, I'm either 
+                hiking or playing D&D.
                 </CardContent>
             </Card>
         )

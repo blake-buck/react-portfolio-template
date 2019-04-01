@@ -13,24 +13,29 @@ import Typography from '@material-ui/core/Typography';
 const theme = createMuiTheme({
   palette:{
     primary:{
-      light: '#757ce8',
-      main: '#3f50b5',
-      dark: '#002884',
+      light: '#819ca9',
+      main: '#546e7a',
+      dark: '#29434e',
       contrastText: '#fff',
     },
     secondary:{
       
-        light: '#ff7961',
-        main: '#f44336',
-        dark: '#ba000d',
+        light: '#82e9de',
+        main: '#4db6ac',
+        dark: '#00867d',
         contrastText: '#000',
       
-    }
+    },
+    typography: {
+      useNextVariants: true,
+    },
   }
 })
 
 const styles = (theme) => ({
-  
+  typography:{
+    padding:10
+  }
 })
 
 class App extends Component {
@@ -51,13 +56,14 @@ class App extends Component {
     return (
       <MuiThemeProvider theme={theme}>
       <div>
-        <AppBar position='static'>
+        <AppBar position='static' >
 
-          <Typography component='h4' variant='h4' color='inherit' align='center'>Sheev Palpatine</Typography>
+          <Typography className={classes.typography} component='h4' variant='h4' color='inherit' align='center'>Blake Buck</Typography>
           <Tabs  
             value={tabValue} 
             onChange={(e, tabValue)=>this.handleChange(e, tabValue)}
             centered={true}
+            style={{backgroundColor:theme.palette.primary.light}}
           >
             <Tab label='About'/>
             <Tab label='Projects'/>
