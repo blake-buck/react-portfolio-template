@@ -28,6 +28,7 @@ Begin making modifications<br>
 ### Setup
 
 #### App
+To modify the color scheme, change the theme declared in App.js<br>
 
 Change the typography component in Appbar to your name<br>
 
