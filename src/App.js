@@ -4,12 +4,30 @@ import About from './Components/About/About';
 import Projects from './Components/Projects/Projects';
 
 //@material-ui imports
-import {withStyles} from '@material-ui/core/styles';
+import {withStyles, createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 
+const theme = createMuiTheme({
+  palette:{
+    primary:{
+      light: '#757ce8',
+      main: '#3f50b5',
+      dark: '#002884',
+      contrastText: '#fff',
+    },
+    secondary:{
+      
+        light: '#ff7961',
+        main: '#f44336',
+        dark: '#ba000d',
+        contrastText: '#000',
+      
+    }
+  }
+})
 
 const styles = (theme) => ({
   
@@ -31,6 +49,7 @@ class App extends Component {
     const {tabValue} = this.state;
     const {classes} = this.props;
     return (
+      <MuiThemeProvider theme={theme}>
       <div>
         <AppBar position='static'>
 
@@ -50,6 +69,7 @@ class App extends Component {
         {tabValue === 1 && <Projects />}
         
       </div>
+      </MuiThemeProvider>
     );
   }
 }
