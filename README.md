@@ -1,6 +1,6 @@
 ## react-portfolio-template
 
-This is a basic portfolio site created with React and MaterialUI that is designed to be readable, professional, and
+This is a basic portfolio site created with React and MaterialUI that is designed to be readable, project-focused, and
 mobile responsive. 
 
 ### Example Screenshots
